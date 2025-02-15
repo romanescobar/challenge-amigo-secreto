@@ -38,7 +38,8 @@ Este proyecto fue desarrollado con:
    ```
 2. Abrir el archivo `index.html` en un navegador web y jugar.
  
-3. O tambien puedes ingresar directamente aquí: https://romanescobar.github.io/challenge-amigo-secreto/
+## 🌍 Demo en vivo  
+¡Prueba la aplicación aquí! 👉 [Amigo Secreto](https://romanescobar.github.io/challenge-amigo-secreto/)
 
 ## 📖 Cómo contribuir
 Si tienes ideas para mejorar el proyecto, siéntete libre de hacer un **fork** y enviar un **pull request**. 🚀
