@@ -11,6 +11,12 @@ function agregarAmigo() {
         return;
     }
 
+    // Verificar si el nombre ya está en la lista
+    if (amigos.includes(nombre)) {
+        alert("Este nombre ya ha sido agregado.");
+        return;
+    }
+
     amigos.push(nombre);
     ingresarNombre.value = ""; // Limpiar el campo de entrada
 
@@ -48,3 +54,4 @@ function sortearAmigo() {
     itemResultado.classList.add("result-item"); // Agrega clase CSS
     resultado.appendChild(itemResultado);
 }
+
