@@ -37,6 +37,8 @@ Este proyecto fue desarrollado con:
    git clone https://github.com/romanescobar/challenge-amigo-secreto.git
    ```
 2. Abrir el archivo `index.html` en un navegador web y jugar.
+ 
+3. O tambien puedes ingresar directamente aquí: https://romanescobar.github.io/challenge-amigo-secreto/
 
 ## 📖 Cómo contribuir
 Si tienes ideas para mejorar el proyecto, siéntete libre de hacer un **fork** y enviar un **pull request**. 🚀
