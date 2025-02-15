@@ -1,5 +1,11 @@
 # 🎉 Amigo Secreto
 
+![Estado](https://img.shields.io/badge/STATUS-EN%20DESARROLLO-green)
+![Version](https://img.shields.io/badge/VERSION-1.0-blue)
+![HTML](https://img.shields.io/badge/HTML-5-orange)
+![CSS](https://img.shields.io/badge/CSS-3-blue)
+![JS](https://img.shields.io/badge/JavaScript-ES6-yellow)
+
 ¡Hola! Este es mi proyecto **Amigo Secreto**, un desafío de lógica de programación donde creé una aplicación que permite al usuario ingresar nombres de amigos y luego realizar un sorteo aleatorio.
 
 ## 🚀 Tecnologías utilizadas
