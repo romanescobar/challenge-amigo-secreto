@@ -1,32 +1,36 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
+// Lista para almacenar los nombres de los amigos
 let amigos = [];
 
+// Función para agregar un amigo a la lista
 function agregarAmigo() {
     let ingresarNombre = document.getElementById("amigo");
+    let nombre = ingresarNombre.value.trim(); // Elimina espacios al inicio y final
 
-    if (ingresarNombre.value === "") {
-        alert("Por favor, inserte un nombre.");
+    if (nombre === "") {
+        alert("Por favor, inserte un nombre válido.");
         return;
     }
 
-    amigos.push(ingresarNombre.value);
-    ingresarNombre.value = "";
+    amigos.push(nombre);
+    ingresarNombre.value = ""; // Limpiar el campo de entrada
 
     mostrarLista();
 }
 
+// Función para mostrar la lista de amigos en la página
 function mostrarLista() {
     let listaAmigos = document.getElementById("listaAmigos");
+    listaAmigos.innerHTML = ""; // Limpiar lista antes de actualizarla
 
-    // Limpiar la lista antes de actualizarla
-    listaAmigos.innerHTML = "";
-
-    // Recorrer el array y agregar cada amigo como un <li>
-    for (let i = 0; i < amigos.length; i++) {
-        listaAmigos.innerHTML += `<li>${amigos[i]}</li>`;
-    }
+    amigos.forEach((amigo) => {
+        let item = document.createElement("li");
+        item.textContent = amigo;
+        item.classList.add("name-item"); // Agrega clase CSS
+        listaAmigos.appendChild(item);
+    });
 }
 
+// Función para sortear un amigo secreto
 function sortearAmigo() {
     if (amigos.length === 0) {
         alert("No hay nombres en la lista para sortear.");
@@ -36,5 +40,11 @@ function sortearAmigo() {
     let indiceAleatorio = Math.floor(Math.random() * amigos.length);
     let amigoSorteado = amigos[indiceAleatorio];
 
-    document.getElementById("resultado").innerHTML = `🎉 El amigo secreto es: <strong>${amigoSorteado}</strong> 🎉`;
+    let resultado = document.getElementById("resultado");
+    resultado.innerHTML = ""; // Limpiar resultado previo
+
+    let itemResultado = document.createElement("li");
+    itemResultado.textContent = `🎉 El amigo secreto es: ${amigoSorteado} 🎉`;
+    itemResultado.classList.add("result-item"); // Agrega clase CSS
+    resultado.appendChild(itemResultado);
 }
