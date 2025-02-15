@@ -28,9 +28,9 @@ Este proyecto fue desarrollado con:
 ## 🔧 Cómo ejecutar el proyecto
 1. Clonar este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/amigo-secreto.git
+   git clone https://github.com/romanescobar/challenge-amigo-secreto.git
    ```
-2. Abrir el archivo `index.html` en un navegador web.
+2. Abrir el archivo `index.html` en un navegador web y jugar.
 
 ## 📖 Cómo contribuir
 Si tienes ideas para mejorar el proyecto, siéntete libre de hacer un **fork** y enviar un **pull request**. 🚀
